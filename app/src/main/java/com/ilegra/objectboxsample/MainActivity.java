@@ -64,6 +64,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         showNames();
     }
 
+    private void updateUser(){
+        user = userBox.find(User_.name, "lucas bicca").get(0);
+        user.setName(editTextName.getText().toString());
+        userBox.put(user);
+        editTextName.setText("");
+        showNames();
+    }
+
     private void clearUsers(){
         //remove todos os itens do box da entidade User
         userBox.removeAll();
@@ -72,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void showNames(){
         users = userBox.getAll();
+        //users = userBox.find("name", "lucas bicca");
         if(users != null && users.size() > 0){
             //limpa a String names e o TextView
             names = "";
@@ -91,7 +100,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
         switch (v.getId()){
             case R.id.button_add:
-                addUser();
+                //addUser();
+                updateUser();
                 break;
 
             case R.id.button_clear:
