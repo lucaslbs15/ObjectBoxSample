@@ -13,6 +13,7 @@ import io.objectbox.BoxStore;
 public class ObjectBoxSampleApplication extends Application {
     @Override
     public void onCreate(){
+        super.onCreate();
         Log.i("Bicca", ObjectBoxSampleApplication.class.getSimpleName() + " - onCreate()");
     }
 

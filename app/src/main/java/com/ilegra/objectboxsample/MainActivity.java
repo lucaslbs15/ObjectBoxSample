@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //concatena a String anterior com o nome
                 names += item.getName() + "\n";
                 textViewNames.setText(names);
+                Log.i("Bicca", "id: " + item.getId() + " - nome: " + item.getName());
             }
         }
         else

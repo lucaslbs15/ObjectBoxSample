@@ -20,9 +20,47 @@
         }
       ],
       "refId": 3306591643194692739
+    },
+    {
+      "id": 2,
+      "lastPropertyId": 6,
+      "name": "Address",
+      "properties": [
+        {
+          "id": 1,
+          "name": "name",
+          "refId": 4993095957859110359
+        },
+        {
+          "id": 2,
+          "name": "city",
+          "refId": 6128152511244248043
+        },
+        {
+          "id": 3,
+          "name": "state",
+          "refId": 5045841039630485808
+        },
+        {
+          "id": 4,
+          "name": "country",
+          "refId": 4537038234416710946
+        },
+        {
+          "id": 5,
+          "name": "zipCode",
+          "refId": 6258318507879362598
+        },
+        {
+          "id": 6,
+          "name": "id",
+          "refId": 5432242552663691507
+        }
+      ],
+      "refId": 1889122595885856514
     }
   ],
-  "lastEntityId": 1,
+  "lastEntityId": 2,
   "lastIndexId": 0,
   "lastSequenceId": 0,
   "metaVersion": 1,
