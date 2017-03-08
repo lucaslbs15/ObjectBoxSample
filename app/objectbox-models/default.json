@@ -65,6 +65,8 @@
   "lastSequenceId": 0,
   "metaVersion": 1,
   "retiredEntityRefIds": [],
-  "retiredPropertyRefIds": [],
+  "retiredPropertyRefIds": [
+    6182929114015188041
+  ],
   "version": 1
 }
