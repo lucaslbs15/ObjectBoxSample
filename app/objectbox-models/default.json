@@ -20,13 +20,53 @@
         }
       ],
       "refId": 3306591643194692739
+    },
+    {
+      "id": 2,
+      "lastPropertyId": 7,
+      "name": "Address",
+      "properties": [
+        {
+          "id": 2,
+          "name": "name",
+          "refId": 6952464435881404588
+        },
+        {
+          "id": 3,
+          "name": "zipCode",
+          "refId": 5330881221214933765
+        },
+        {
+          "id": 4,
+          "name": "city",
+          "refId": 7314111504692534681
+        },
+        {
+          "id": 5,
+          "name": "country",
+          "refId": 1643712026174610710
+        },
+        {
+          "id": 6,
+          "name": "userId",
+          "refId": 4406450703937048638
+        },
+        {
+          "id": 7,
+          "name": "addressId",
+          "refId": 1146999074321667718
+        }
+      ],
+      "refId": 1531106528174275886
     }
   ],
-  "lastEntityId": 1,
+  "lastEntityId": 2,
   "lastIndexId": 0,
   "lastSequenceId": 0,
   "metaVersion": 1,
   "retiredEntityRefIds": [],
-  "retiredPropertyRefIds": [],
+  "retiredPropertyRefIds": [
+    6182929114015188041
+  ],
   "version": 1
 }

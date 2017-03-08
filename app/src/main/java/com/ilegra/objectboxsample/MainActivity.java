@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import io.objectbox.Box;
+import io.objectbox.Property;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         showNames();
     }
 
+    private void getUser(String name){
+        users = userBox.find(User_.name, name);
+        if(users != null && users.size() > 0)
+            textViewNames.setText(String.format("Id: %s - nome: %s", users.get(0).getId(), users.get(0).getName()));
+        else
+            textViewNames.setText("vazio");
+    }
+
     private void setUserBox(){
         userBox = ((ObjectBoxSampleApplication)getApplication()).getBoxStore().boxFor(User.class);
         Log.i("Bicca", MainActivity.class.getSimpleName() + " - setUser()");
@@ -65,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void updateUser(){
-        user = userBox.find(User_.name, "lucas bicca").get(0);
+        user = userBox.find(User_.id, 2).get(0);
         user.setName(editTextName.getText().toString());
         userBox.put(user);
         editTextName.setText("");
